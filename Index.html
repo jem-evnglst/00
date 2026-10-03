@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F5F4EF">
+  <meta name="description" content="Send an inquiry to Jem Evangelista for social media, content, affiliate, and digital business support.">
+  <title>Work with Jem | Social Media & Content</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23240C0E'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='27' font-weight='900' fill='%23F5F4EF'%3EJM%3C/text%3E%3C/svg%3E">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+    :root{
+      --paper:#F5F4EF;
+      --ink:#171717;
+      --cherry:#240C0E;
+      --cream:#F5F4EF;
+      --line:#d1d0c8;
+      --muted:#5e5e58;
+      color-scheme:light;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font:16px/1.5 'DM Sans',Arial,sans-serif;
+    }
+
+    a{
+      color:inherit;
+    }
+
+    button,
+    input,
+    textarea{
+      font:inherit;
+    }
+
+    h1,
+    h2,
+    h3,
+    p{
+      margin-top:0;
+    }
+
+    h1,
+    h2,
+    h3{
+      font-family:'Space Grotesk',sans-serif;
+      letter-spacing:-.055em;
+      line-height:.98;
+    }
+
+    .shell{
+      max-width:1420px;
+      margin:0 auto;
+      padding:0 42px;
+    }
+
+    .eyebrow{
+      font:700 12px/1.35 'Space Grotesk',sans-serif;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible{
+      outline:3px solid #7065c8;
+      outline-offset:3px;
+    }
+
+
+    /* HEADER */
+
+    header{
+      height:76px;
+      border-bottom:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .brand{
+      font:700 22px 'Space Grotesk',sans-serif;
+      letter-spacing:-.06em;
+      text-decoration:none;
+    }
+
+    .header-note{
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+
+
+    /* MAIN */
+
+    .main{
+      padding:80px 0 105px;
+      display:grid;
+      grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+      gap:clamp(30px,5vw,80px);
+      align-items:start;
+    }
+
+
+    /* LEFT PROFILE PANEL */
+
+    .profile-panel{
+      position:sticky;
+      top:24px;
+      min-height:650px;
+      border:1px solid var(--cherry);
+      border-radius:14px;
+      background:var(--cherry);
+      color:var(--cream);
+      padding:clamp(26px,3vw,44px);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .profile-panel .eyebrow{
+      color:var(--cream);
+    }
+
+    .profile-panel h1{
+      font-size:clamp(2.8rem,4.4vw,5.3rem);
+      text-transform:uppercase;
+      margin:44px 0 0;
+      overflow-wrap:normal;
+    }
+
+    .profile-panel h1 span{
+      display:block;
+    }
+
+    .profile-panel .outline{
+      color:transparent;
+      -webkit-text-stroke:1.25px var(--cream);
+    }
+
+    .profile-panel .accent{
+      display:inline-block;
+      background:var(--cream);
+      color:var(--cherry);
+      padding:0 .09em .1em;
+      transform:rotate(-2deg);
+    }
+
+
+    /* FORM */
+
+    .form-wrap{
+      border:1px solid var(--ink);
+      border-radius:14px;
+      background:#fff;
+      box-shadow:12px 12px 0 var(--cherry);
+      padding:clamp(25px,5vw,66px);
+    }
+
+    .form-wrap h2{
+      font-size:clamp(2.8rem,5.5vw,5.7rem);
+      margin:18px 0 22px;
+    }
+
+    .intro-text{
+      font-size:18px;
+      max-width:620px;
+      color:#464640;
+      margin-bottom:34px;
+    }
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    label.field{
+      display:block;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.04em;
+    }
+
+    label.field span{
+      display:block;
+      margin:0 0 8px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea{
+      width:100%;
+      padding:14px 15px;
+      min-height:53px;
+      background:var(--paper);
+      border:1px solid #b8b8b0;
+      border-radius:6px;
+      color:var(--ink);
+      font-size:16px;
+    }
+
+    input::placeholder,
+    textarea::placeholder{
+      color:#77776f;
+      opacity:1;
+    }
+
+    textarea{
+      min-height:100px;
+      resize:vertical;
+    }
+
+    .full{
+      margin-top:16px;
+    }
+
+    .help-label{
+      font:700 14px 'Space Grotesk',sans-serif;
+      margin:34px 0 14px;
+    }
+
+
+    /* SERVICE CHECKBOXES */
+
+    .checkbox-group{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+
+    .checkbox-item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      border:1px solid var(--line);
+      border-radius:7px;
+      padding:13px 14px;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:600;
+      transition:background .2s,border-color .2s,color .2s;
+    }
+
+    .checkbox-item:hover{
+      background:var(--paper);
+      border-color:var(--cherry);
+    }
+
+    .checkbox-item:has(input:checked){
+      background:var(--cherry);
+      color:var(--cream);
+      border-color:var(--cherry);
+    }
+
+    input[type=checkbox]{
+      width:18px;
+      height:18px;
+      accent-color:var(--cherry);
+      flex:none;
+    }
+
+
+    /* SUBMIT BUTTON */
+
+    .submit{
+      width:100%;
+      min-height:58px;
+      margin-top:28px;
+      background:var(--cherry);
+      color:var(--cream);
+      border:1px solid var(--cherry);
+      border-radius:100px;
+      cursor:pointer;
+      font-weight:700;
+      letter-spacing:.02em;
+      transition:transform .2s,background .2s;
+    }
+
+    .submit:hover{
+      transform:translateY(-3px);
+      background:#3A1519;
+    }
+
+    .note{
+      font-size:13px;
+      color:var(--muted);
+      margin:15px 0 0;
+    }
+
+    .note a{
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+      background:var(--cherry);
+      color:var(--cream);
+      padding:34px 0;
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner strong{
+      font:700 20px 'Space Grotesk',sans-serif;
+    }
+
+    .footer-inner small{
+      color:#d8d2ce;
+      font-size:12px;
+    }
+
+    .footer-inner a{
+      color:var(--cream);
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .footer-inner a:hover{
+      text-decoration:underline;
+    }
+
+
+    /* TABLET */
+
+    @media(max-width:900px){
+
+      .shell{
+        padding:0 24px;
+      }
+
+      .main{
+        grid-template-columns:1fr;
+        gap:35px;
+        padding-top:55px;
+      }
+
+      .profile-panel{
+        position:static;
+        min-height:340px;
+      }
+
+      .profile-panel h1{
+        font-size:clamp(3rem,9vw,5.3rem);
+        margin:25px 0 35px;
+      }
+
+      .form-wrap{
+        box-shadow:8px 8px 0 var(--cherry);
+      }
+    }
+
+
+    /* MOBILE */
+
+    @media(max-width:600px){
+
+      .shell{
+        padding:0 18px;
+      }
+
+      header{
+        height:66px;
+      }
+
+      .header-note{
+        font-size:11px;
+      }
+
+      .main{
+        padding:36px 0 75px;
+      }
+
+      .profile-panel{
+        padding:25px 22px;
+        min-height:300px;
+      }
+
+      .profile-panel h1{
+        font-size:clamp(2.8rem,10.7vw,4.8rem);
+        margin:26px 0;
+      }
+
+      .profile-panel .eyebrow{
+        font-size:11px;
+      }
+
+      .form-wrap{
+        padding:25px 19px;
+        box-shadow:5px 5px 0 var(--cherry);
+      }
+
+      .form-wrap h2{
+        font-size:clamp(2.7rem,11vw,4rem);
+      }
+
+      .intro-text{
+        font-size:16px;
+      }
+
+      .field-grid,
+      .checkbox-group{
+        grid-template-columns:1fr;
+      }
+
+      .footer-inner{
+        display:block;
+      }
+
+      .footer-inner > *{
+        display:block;
+        margin-bottom:12px;
+      }
+    }
+
+
+    @media(prefers-reduced-motion:reduce){
+
+      html{
+        scroll-behavior:auto;
+      }
+
+      .submit,
+      .checkbox-item{
+        transition:none;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header class="shell">
+    <a class="brand" href="#top" aria-label="Jem Evangelista, top of page">
+      JEM
+    </a>
+
+    <span class="header-note">
+      PHILIPPINES · WORKING GLOBALLY
+    </span>
+  </header>
+
+
+  <main id="top">
+
+    <section class="main shell" aria-labelledby="inquiry-heading">
+
+      <aside class="profile-panel" aria-label="Jem Evangelista profile">
+
+        <div>
+
+          <div class="eyebrow"></div>
+
+          <h1>
+            <span>SOCIAL.</span>
+            <span class="outline">CONTENT.</span>
+
+            <span>
+              <i class="accent" style="font-style:normal">
+                SYSTEMS.
+              </i>
+            </span>
+          </h1>
+
+        </div>
+
+      </aside>
+
+
+      <div class="form-wrap">
+
+        <div class="eyebrow">
+          00 | Start a conversation
+        </div>
+
+        <h2 id="inquiry-heading">
+          LET'S WORK<br>
+          TOGETHER.
+        </h2>
+
+        <p class="intro-text">
+          Share a few details below so I can understand the support you're looking for. I'll review your inquiry and follow up personally.
+        </p>
+
+
+        <form
+          id="inquiryForm"
+          action="https://formsubmit.co/janmarieevangelista5@gmail.com"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New website inquiry for Jem Evangelista"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thanks for reaching out! Your inquiry has been received. I will review your details and reply personally. — Jem Evangelista"
+          >
+
+          <input
+            type="text"
+            name="_honey"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          >
+
+
+          <div class="field-grid">
+
+            <label class="field" for="fullName">
+
+              <span>Full name *</span>
+
+              <input
+                type="text"
+                name="Full name"
+                id="fullName"
+                autocomplete="name"
+                required
+                placeholder="Your full name"
+              >
+
+            </label>
+
+
+            <label class="field" for="email">
+
+              <span>Email address *</span>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                placeholder="you@company.com"
+              >
+
+            </label>
+
+          </div>
+
+
+          <label class="field full" for="Instagram">
+
+            <span>Instagram username</span>
+
+            <input
+              type="text"
+              name="Instagram"
+              id="Instagram"
+              placeholder="@yourbrand"
+            >
+
+          </label>
+
+
+          <fieldset style="border:0;padding:0;margin:0">
+
+            <legend class="help-label">
+              What would you like support with?
+            </legend>
+
+
+            <div class="checkbox-group">
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Social Media Management"
+                >
+                Social media management
+              </label>
+
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Content Creation and Editing"
+                >
+                Content creation & editing
+              </label>
+
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Content Strategy and Calendar"
+                >
+                Strategy & content calendar
+              </label>
+
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Affiliate Support"
+                >
+                Affiliate support
+              </label>
+
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Digital Business Support"
+                >
+                Digital business support
+              </label>
+
+
+              <label class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="Service"
+                  value="Not Sure Yet"
+                >
+                Not sure yet
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <label class="field full" for="Details">
+
+            <span>
+              A little about your project (optional)
+            </span>
+
+            <textarea
+              name="Details"
+              id="Details"
+              placeholder="What are you working on, and what would help most?"
+            ></textarea>
+
+          </label>
+
+
+          <button class="submit" type="submit">
+            Get My Service Details
+          </button>
+
+
+          <p class="note">
+            Your Details will be used to respond to this inquiry.
+            You can also
+            <a
+              href="https://wa.me/639654459733"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              message me on WhatsApp
+            </a>.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner shell">
+
+      <div>
+
+        <strong>
+          JEM EVANGELISTA
+        </strong>
+
+        <br>
+
+        <small>
+          Social media · Content · Digital business support
+        </small>
+
+      </div>
+
+
+      <div>
+
+        <a
+          href="https://www.instagram.com/jemevnglst/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        &nbsp;
+
+        <a
+          href="https://www.facebook.com/evnglstjem"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+
+        &nbsp;
+
+        <a
+          href="https://wa.me/639654459733"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
